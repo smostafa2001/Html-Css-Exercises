@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Product preview card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    @font-face {
+      font-family: Montserrat;
+      src: url(font/Montserrat-VariableFont_wght.ttf);
+    }
+
+    @font-face {
+      font-family: Fraunces;
+      src: url(font/Fraunces-VariableFont_SOFT\,WONK\,opsz\,wght.ttf);
+    }
+
+    @media screen and (min-width:768px) {
+     
+      span.d::after{
+        content: "\a";
+        white-space: pre;
+      }
+      .mob {
+        display: none;
+      }
+
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+        position: fixed;
+        bottom: 20px;
+        left: 40%;
+        right: 40%;
+
+      }
+
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+
+
+      .super-container {
+        background-color: hsl(30, 38%, 92%);
+        position: relative;
+        width: 1440px;
+        height: 800px;
+        margin: auto;
+        top: 60px;
+      }
+
+      .image {
+        position: absolute;
+        top: 170px;
+        left: 420px;
+        right: 720px;
+        bottom: 170px;
+
+      }
+
+      .image img {
+        border-top-left-radius: 2.5%;
+        border-bottom-left-radius: 2.5%;
+        width: 300px;
+        height: 460px;
+      }
+
+      .container {
+        background-color: hsl(0, 0%, 100%);
+        position: absolute;
+        top: 170px;
+        bottom: 170px;
+        right: 420px;
+        left: 720px;
+        width: 300px;
+        height: 460px;
+        border-top-right-radius: 2.5%;
+        border-bottom-right-radius: 2.5%;
+      }
+
+      .perfume {
+        letter-spacing: 2px;
+        color: hsl(228, 12%, 48%);
+        margin-top: 30px;
+        margin-left: 30px;
+        font-size: medium;
+        font-family: Montserrat;
+        font-weight: 500;
+      }
+
+      .title {
+        margin-top: 30px;
+        color: hsl(212, 21%, 14%);
+        margin-left: 30px;
+        font-size: xx-large;
+        text-align: justify;
+
+        font-family: Fraunces;
+        font-weight: 700;
+      }
+
+      .desciption {
+        margin-top: 30px;
+        margin-left: 30px;
+        color: hsl(228, 12%, 48%);
+        font-family: Montserrat;
+        font-weight: 700;
+
+
+      }
+
+      .price {
+        position: absolute;
+        top: 310px;
+
+      }
+
+      .price-real {
+        position: absolute;
+        left: 160px;
+        top: 10px;
+        text-decoration: line-through;
+        font-size: smaller;
+        color: hsl(228, 12%, 48%);
+      }
+
+      .price-discount {
+        position: absolute;
+        left: 20px;
+        font-size: xx-large;
+        font-weight: bold;
+        color: hsl(158, 36%, 37%);
+      }
+
+
+      .button {
+        position: absolute;
+        top: 370px;
+        left: 30px;
+        background-color: hsl(158, 36%, 37%);
+        padding: 20px 60px;
+        border-radius: 2.5%;
+        color: hsl(0, 0%, 100%);
+      }
+
+      .button span img {
+        margin-right: 10px;
+      }
+
+      .button:hover {
+        background-color: #1a4031;
+        border-radius: 3%;
+        cursor: pointer;
+      }
+    }
+
+    @media screen and (max-width:768px) {
+      
+      span.m::after{
+        content: "\a";
+        white-space: pre;
+      }
+      .desk {
+        display: none;
+
+      }
+
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+        position: fixed;
+        bottom: 20px;
+        left: 40%;
+        right: 40%;
+        display: none;
+
+      }
+
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+
+
+      .super-container {
+        background-color: hsl(30, 38%, 92%);
+        position: absolute;
+        width: 375px;
+        height: 670px;
+        right: 0;
+        left: 0;
+        top: 0px;
+        bottom: 0px;
+
+      }
+
+      .image {
+
+        position: absolute;
+        top: 30px;
+        left: 20px;
+        right: 20px;
+        bottom: 390px;
+
+      }
+
+      .image img {
+
+        border-top-left-radius: 2.5%;
+        border-top-right-radius: 2.5%;
+        width: 340px;
+        height: 240px;
+      }
+
+      .container {
+        background-color: hsl(0, 0%, 100%);
+        position: absolute;
+        top: 270px;
+        bottom: 30px;
+        right: 20px;
+        left: 20px;
+        width: 340px;
+        height: 370px;
+        border-bottom-left-radius: 2.5%;
+        border-bottom-right-radius: 2.5%;
+      }
+
+      .perfume {
+        letter-spacing: 5px;
+        color: hsl(228, 12%, 48%);
+        margin-top: 20px;
+        margin-left: 20px;
+        font-size: medium;
+        font-family: Montserrat;
+        font-weight: 500;
+      }
+
+      .title {
+        margin-top: 20px;
+        color: hsl(212, 21%, 14%);
+        margin-left: 20px;
+        font-size: xx-large;
+        text-align: justify;
+        font-family: Fraunces;
+        font-weight: 700;
+      }
+
+
+      .desciption {
+        margin-top: 20px;
+        margin-left: 20px;
+        color: hsl(228, 12%, 48%);
+        font-family: Montserrat;
+        font-weight: 700;
+
+
+      }
+
+      .price {
+        position: absolute;
+        top: 250px;
+
+      }
+
+      .price-real {
+        position: absolute;
+        left: 160px;
+        top: 10px;
+        text-decoration: line-through;
+        font-size: smaller;
+        color: hsl(228, 12%, 48%);
+      }
+
+      .price-discount {
+        position: absolute;
+        left: 20px;
+        font-size: xx-large;
+        font-weight: bold;
+        color: hsl(158, 36%, 37%);
+      }
+
+      .button {
+        position: absolute;
+        top: 300px;
+        left: 20px;
+        right: 20px;
+        bottom: 30px;
+        background-color: hsl(158, 36%, 37%);
+        padding: 10px 90px;
+        border-radius: 2.5%;
+        color: hsl(0, 0%, 100%);
+      }
+
+      .button span img {
+        margin-right: 10px;
+      }
+
+      .button:hover {
+        background-color: #1a4031;
+        border-radius: 3%;
+        cursor: pointer;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="super-container">
+    <div class="image">
+      <img src="images/image-product-desktop.jpg" alt="" class="desk">
+      <img src="images/image-product-mobile.jpg" alt="" class="mob">
+    </div>
+    <div class="container">
+      <div class="perfume">
+        Perfume
+      </div>
+
+      <div class="title">
+        <span class="d">Gabrielle</span> <span class="m">Essence</span> <span class="d">Eau</span> De Parfum
+      </div>
+
+      <div class="desciption">
+        A floral, solar and <span class="m d">voluptuous</span> interpretation composed <span class="d">by</span> <span class="m">Olivier</span> Polge,
+          <span class="d">Perfumer-Creator</span> for the House <span class="m">of</span> CHANEL.
+      </div>
+
+      <div class="price">
+        <span class="price-discount">$149.99</span>
+        <span class="price-real">$169.99</span>
+      </div>
+
+
+      <div class="button">
+        <span><img src="images/icon-cart.svg" alt=""></span>
+        <span>Add to Cart</span>
+
+      </div>
+    </div>
+
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Mostafa Hosseini</a>.
+    </div>
+  </div>
+
+</body>
+
+</html>
