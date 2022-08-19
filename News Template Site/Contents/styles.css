@@ -1,0 +1,376 @@
+body {
+    direction: rtl;
+    font-family: 'BYekan';
+    font-size: 14px;
+}
+
+/* general styles */
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.clearfix {
+    clear: both;
+}
+
+/* Media styles */
+
+.media {
+    margin-top: 10px;
+}
+
+.media .media-object,
+.media .media-body {
+    display: table-cell;
+}
+
+.media .media-object {
+    width: 150px;
+    padding-left: 10px;
+}
+
+.media .media-object img {
+    width: 100%;
+    height: auto;
+}
+
+.media .media-body {
+    vertical-align: top;
+}
+
+/* Box styles */
+
+.box {
+    border: 1px solid #202a69;
+    margin-bottom: 10px;
+
+}
+
+.box .box-header {
+    background-color: #202a69;
+    color: white;
+    padding: 10px;
+}
+
+.box .box-body {
+    padding: 10px;
+}
+
+/* top styles */
+#top {
+    background-color: #202a69;
+}
+
+#top #top-navigation ul {
+    list-style: none;
+}
+
+#top #top-navigation ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+#top #top-navigation ul li a {
+    color: white;
+    text-decoration: none;
+    line-height: 40px;
+}
+
+#top #top-navigation ul li a:hover {
+    color: #9fc8d4;
+}
+
+#date-time-text {
+    line-height: 40px;
+    color: white;
+}
+
+/* Header Styles */
+
+header {
+    background-color: #161616;
+    height: 90px;
+}
+
+header #top-logo h1 {
+    font-size: 0;
+    background-image: url('Images/top-logo.png');
+    width: 220px;
+    height: 60px;
+    margin-top: 17px;
+
+
+}
+
+header #top-ads {
+    background-color: white;
+    display: inline-block;
+    width: 100%;
+    line-height: 70px;
+    text-align: center;
+    margin: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+header #search-box {
+    background-color: white;
+    margin-top: 30px;
+
+}
+
+header #search-box button {
+    background-color: transparent;
+    border: 0;
+    float: left;
+    margin-top: 8px;
+
+}
+
+header #search-box input[type=text] {
+    border: 0;
+    font-family: 'BYekan';
+    padding: 10px;
+    outline: none;
+    float: right;
+}
+
+/* Main Navigation Styles */
+
+nav {
+    border-bottom: 3px solid #202a69;
+
+}
+
+#main-navigation {
+    list-style: none;
+
+}
+
+#main-navigation li {
+    display: inline-block;
+    line-height: 40px;
+
+}
+
+#main-navigation li a.home img {
+    vertical-align: middle;
+    width: 22.5px;
+    height: 22.5px;
+}
+
+#main-navigation li a {
+    color: black;
+    text-decoration: none;
+    padding: 0 10px;
+    line-height: 40px;
+    display: inline-block;
+
+}
+
+
+#main-navigation li.active,
+#main-navigation li a:hover {
+    background-color: #202a69;
+    color: white;
+}
+
+.social-networks {
+    list-style: none;
+    margin-top: 10px;
+}
+
+.social-networks li {
+    display: inline-block;
+}
+
+.social-networks li a {
+    width: 25px;
+    height: 25px;
+    font-size: 0;
+    display: inline-block;
+}
+
+.social-networks li a.facebook {
+    background-image: url('images/facebook.png');
+}
+
+.social-networks li a.twitter {
+    background-image: url('images/twitter.png');
+}
+
+.social-networks li a.google {
+    background-image: url('images/googleplus.png');
+}
+
+.social-networks li a.instagram {
+    background-image: url('images/instagram.png');
+}
+
+
+.social-networks li a.telegram {
+    background-image: url('images/telegram.png');
+}
+
+/* Main Section styles */
+
+#main-section {
+    margin: 10px 0;
+}
+
+.side-thumb-link {
+    position: relative;
+    display: block;
+}
+
+.side-thumb-link .title {
+    position: absolute;
+    left: -2px;
+    bottom: 4px;
+    right: 0;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+}
+
+.side-thumb-link:hover .title {
+    background-color: black;
+}
+
+.side-thumb-link img {
+    width: 100%;
+    height: auto;
+    border: 1px solid gainsboro;
+}
+
+#home-trend-news {
+    position: relative;
+    border: 1px solid #2e3772;
+}
+
+#home-trend-news img {
+    width: 100%;
+    height: auto;
+
+}
+
+#home-trend-news .title {
+    position: absolute;
+    display: block;
+    left: 0;
+    bottom: 0px;
+    right: 0;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+}
+
+#news-items .media-body .title {
+    text-decoration: none;
+    color: #2e3772;
+    font-size: 1.2em;
+}
+
+#news-items .media-body .title:hover {
+    color: #d72a2a;
+}
+
+#news-items .media-body .brief {
+    text-align: justify;
+    margin-top: 10px;
+}
+
+#news-items .media-object .img {
+    border: 1px solid #2e3772;
+}
+
+#archive-button {
+    display: block;
+    text-align: center;
+    background-color: #202a69;
+    color: white;
+    line-height: 40px;
+    margin-top: 10px;
+    text-decoration: none;
+}
+
+#archive-button:hover {
+    background-color: #3e4994;
+}
+
+footer {
+    background-color: #181818;
+    padding: 30px 0;
+
+}
+
+footer #footer-links ul {
+    list-style: none;
+
+}
+
+footer #footer-links ul li {
+    display: inline-block;
+    margin: 0 10px;
+
+}
+
+footer #footer-links ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+
+}
+
+footer .social-networks {
+    margin-top: 30px;
+}
+
+#copyright {
+    background-color: #202a69;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+/* contact form */
+
+form .control-container {
+    width: 100%;
+    border: 1px solid gainsboro;
+    overflow: hidden;
+    margin: 10px 0;
+}
+
+form .control-container input,
+form .control-container textarea {
+    width: 100%;
+    padding: 5px;
+    border: 0;
+    outline: none;
+    font-family: 'BYekan';
+}
+
+form .form-submit {
+    border: 0;
+    background-color: #388e50;
+    color: white;
+    font-family: 'BYekan';
+    padding: 10px 20px;
+    cursor: pointer;  
+}
+
+form .form-submit:hover {
+    background-color: #49b868;
+    
+    
+}
