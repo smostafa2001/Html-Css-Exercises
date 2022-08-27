@@ -11,48 +11,101 @@
             font-size: xx-large;
             color: white;
         }
-        .row {
-            position: absolute;
-            top: 30%;
-            left: 30%;
-            right: 30%;
-            bottom: 30%;
-            background-color: gainsboro;
-            display: flex;
 
+        .flex-container {
+            display: flex;
+            flex-wrap: nowrap;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            background-color: #f1f1f1;
+            width: 300px;
+            margin: 10px;
+            align-items: center;
+            justify-content: center;
+
+
+        }
+
+        .row>div {
+            width: 300px;
+            margin: 10px;
+            text-align: center;
+            line-height: 75px;
+            font-size: 30px;
         }
 
         .col1 {
-            background-color: red;
-            width: 50%;
-            height: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            background-color: darkblue;
+
         }
 
         .col2 {
-            display: flex;
-            background-color: green;
-            width: 50%;
-            height: 100%;
-            justify-content: center;
-            align-items: center;
-            
+
+            background-color: darkcyan;
+
+
         }
 
+        .col3 {
+
+            background-color: darkgoldenrod;
+
+        }
+
+        .col4 {
+            background-color: darkred;
+
+        }
+
+        .col5 {
+
+            background-color: darkgreen;
+
+
+        }
+
+        .col6 {
+
+            background-color: darkgrey;
+
+        }
+        .col7 {
+            background-color: darkkhaki;
+        }
     </style>
 </head>
 
 <body>
     <h1 style="text-align: center">Welcome to my page!</h1>
     <h3 style="text-align: center;">Here are my projects...</h3>
-    <div class="row">
-        <div class="col1">
-            <a href="News Template Site/index.html">News Template Site</a>
-        </div>
-        <div class="col2">
-            <a href="Product preview card component/index.html">Product preview card component</a>
+    <div class="flex-container">
+        <div class="row">
+            <div class="col1">
+                <a href="News Template Site/index.html">News Template Site</a>
+            </div>
+            <div class="col2">
+                <a href="Product preview card component/index.html">Product Preview Card Component</a>
+            </div>
+            <div class="col3">
+                <a href="Goal/index.html">Goal</a>
+            </div>
+            <div class="col4">
+                <a href="Sticky-Header/index.html">Sticky Header</a>
+            </div>
+            <div class="col5">
+                <a href="Card/index.html">Card</a>
+            </div>
+            <div class="col6">
+                <a href="Bear/index.html">Bear</a>
+            </div>
+            <div class="col7">
+                <a href="adminPanel/index.html">Admin Panel</a>
+            </div>
         </div>
     </div>
 </body>
