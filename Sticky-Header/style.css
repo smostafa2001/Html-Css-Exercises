@@ -1,0 +1,45 @@
+html{
+    box-sizing: border-box;
+}
+html *,
+html *::after,
+html *::before{
+    box-sizing: inherit;
+}
+body{
+    font-family: tahoma;
+    line-height: 1.6;
+    background-color: #fff;
+    margin: 0;
+    min-height: 100vh;
+    padding-top: 6em;
+}
+.header{
+    background: #eee;
+    padding: 2em 0;
+    position: fixed;
+    left: 0;
+    top:0;
+    right: 0;
+    z-index: 1;
+}
+.nav ul{
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+.nav li{
+    display: inline-block;
+    margin:0 1em;
+}
+.nav a{
+    display:block;
+    padding: .5em;
+    color: #333;
+    text-decoration:none;
+}
+.main{
+    color:#ccc;
+    max-width: 45em;
+    margin: 2em auto;
+}

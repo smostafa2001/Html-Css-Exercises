@@ -1,0 +1,48 @@
+body{
+    background-color: #eee;
+}
+.background{
+    height: 500px;
+    width: 500px;
+    background-image: url(ground.jpg);
+    background-repeat: no-repeat;
+}
+.background::after{
+    content: "";
+    height: 500px;
+    width: 500px;
+    background-image: url(ball.png);
+    background-repeat: no-repeat;
+    display: block;
+    background-position: 196px 340px;
+}
+.background.goal::after{
+    background-size: 30px;
+}
+/* .background.goal.goal-left-top::after{
+    background-position: 100px 190px;
+} */
+/* .background.goal.goal-right-top::after{
+    background-position: 390px 190px;
+} */
+/* .background.goal.goal-left-bottom::after{
+    background-position: 100px 270px;
+} */
+/* .background.goal.goal-right-bottom::after{
+    background-position: 390px 270px;
+} */
+/* .background.goal.goal-left-center::after{
+    background-position: 100px center;
+} */
+/* .background.goal.goal-right-center::after{
+    background-position: 390px center;
+} */
+/* .background.goal.goal-center-center::after{
+    background-position: center;
+} */
+/* .background.goal.goal-center-top::after{
+    background-position: center 190px;
+} */
+.background.goal.goal-center-bottom::after{
+    background-position: center 270px;
+}
